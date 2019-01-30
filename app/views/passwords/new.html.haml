@@ -4,7 +4,7 @@
     %div.title
       %span.title Password Pusher
       %br
-      %span.tagline Go Ahead.  Email Another Password.
+      %span.tagline EIS Secure Password Server
   %p.payload
     = f.text_field(:payload, { :class => "password", :value => PAYLOAD_INITIAL_TEXT, :onfocus => "prepareTextField(this)", :onblur => "revertTextField(this)", :autocomplete => "off" })
   %p
@@ -47,12 +47,9 @@
     Once expired, encrypted passwords are unequivocally deleted from the database.
 
 %p.notes
-  New
-  = link_to "workflow",  "http://www.packal.org/workflow/passwordpusher"
-  for Alfred users.  Thanks to
-  = link_to "@psteinweber", "https://github.com/pglombardo/PasswordPusher/issues/29"
-  for the idea.
-
+  Thank you for using 
+  = link_to "EIS",  "http://http://www.eiscg.com/"
+  
 %p.notes
   = link_to "FAQ", page_path('faq')
   \|
